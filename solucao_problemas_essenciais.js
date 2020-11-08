@@ -79,21 +79,13 @@ console.log("media = " + arrayMedia(notas).toFixed(2))
 
 
 //Pedro Bento e o Mundo de OZ
-
-let a = [gets(),gets(),gets(),gets(),gets(),gets()];
-
-let i = 0;
-
-if(a.includes("(("))
-  i++;
-
-if(a.includes("))"))
-  i++;
- 
-if(a.includes("("))
-  i++;
-
-if(a.includes(")"))
-  i++;
-
-console.log(i)
+let arraySetJoias = new Set(); 
+let a= gets();
+let count = 0;
+while(a!=""){
+  arraySetJoias.add(a);
+  count++;
+  if (count>106) break;
+  a=gets();
+}
+console.log(arraySetJoias.size); 
