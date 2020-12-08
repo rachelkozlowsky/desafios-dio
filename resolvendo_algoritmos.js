@@ -116,36 +116,3 @@ while(resposta == '1'){
 }
 
 
-
-
-
-/*
-
-let resposta = '1'
-
-while(resposta == '1'){
-  let n1 = +gets()
-
-  let n2 = +gets()
-
-  
-  while(n1 < 0 || n1 > 10){
-    console.log("nota invalida")
-    n1 = +gets()
-  }
-  
-  while(n2 < 0 || n2 > 10){
-    console.log("nota invalida")
-    n2 = +gets()
-  }
-  
-  console.log(`media = ${((n1 + n2) / 2).toFixed(2)}`)
-  
-  resposta = ""
-  
-  while(resposta != 1 && resposta !=2){
-    console.log("novo calculo (1-sim 2-nao)")
-    resposta = +gets()
-  }
-  
-}
