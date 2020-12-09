@@ -110,11 +110,13 @@ console.log(dias + " dia(s)");
 
 /*Tempo do Dobby*/
 
-let line = gets().split(' ');
-let v = parseInt(line[0]);
-let n = parseInt(line[1]);
-let calc = (v + n);
-    if (calc > line){
+let N = parseInt(gets());
+let inteirotemp = gets();
+let inteiros = inteirotemp.split(' ')
+let A = parseInt(line[0]);
+let B = parseInt(line[1]);
+let calc = (A + B);
+    if (calc > N){
       console.log("Deixa para amanha!");
     }else{
       console.log("Farei hoje!");
